@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		.hover {
+			background-color: lightgray;
+		}
+		.selected {
+			outline: 2px dashed red !important;
+		}
+
+		#editPanel {
+			background-color: #d3d3d3;
+			/*background-color: rgba(220, 220, 220, 0.975);*/
+			background: linear-gradient(to right, rgba(220,220,220,0.6) 0%,rgba(220,220,220,0.975) 15%,rgba(220,220,220,0.975) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			font-family: Arial;
+			padding: 1em;
+			position: fixed; top: 0; right: 0;
+			text-align: center;
+			z-index: 10;
+		}
+		#editPanel button, #editPanel select {
+			background-color: #f2f2f2;
+			border: 1px solid black;
+			color: #282828;
+			margin: 0.25em;
+			padding: 0.5em;
+		}
+		#editPanel button {
+			min-width: 2em;
+		}
+		#editPanel button:hover {
+			background-color: #d9d9d9;
+			cursor: pointer;
+		}
+		#editPanel h5 {
+			color: #373737;
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+		#panel_colorPicker {
+			padding: 0;
+		}
+		#panel_colorPicker li {
+			border: 2px solid transparent;
+			display: inline-block;
+			width: 1.5em;
+			height: 1.5em;
+			margin: 0.25em;
+		}
+	</style>
+
+	<!-- STYLES PAGE TEST !-->
+	<style type="text/css">
+		#content div {
+			border: 1px solid red;
+			margin-bottom: 1em;
+		}
+		#content p {
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<button id="panel">Afficher le panneau</button>
+	<div id="content">
+		<h1>Titre de la page</h1>
+		<div>
+			<h2>Une div</h2>
+			<p>Un paragraphe</p>
+		</div>
+		<div>
+			<h2>Une autre div</h2>
+			<p>Un autre paragraphe <strong>en gras</strong></p>
+		</div>
+		<div>
+			<h2>Une autre div</h2>
+			<p>Un autre paragraphe</p>
+		</div>
+		<div>
+			<h2>Une autre div</h2>
+			<p>Un autre paragraphe</p>
+		</div>
+		<div>
+			<h2>Une autre div</h2>
+			<p>Un autre paragraphe</p>
+		</div>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="editor.js"></script>
+</html>
